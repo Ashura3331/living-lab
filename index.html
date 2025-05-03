@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Lab Assignment</title>
+    <!-- Font awesome start -->
+    <script src="https://kit.fontawesome.com/27faa1cb95.js" crossorigin="anonymous"></script>
+    <!-- Font awesome end -->
+    <!-- ADlAM Display font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ADlAM Display font END -->
+
+     <!-- DaisyUI tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- DaisyUI tailwind -->
+     <style>
+         .font-adlam {
+            font-family: 'ADLaM Display', sans-serif;
+         }
+     </style>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bike-primary': '#E76F51',
+                'living-primary-bg': 'rgb(255, 249, 244)',
+                'living-secondary-bg': 'rgb(255, 220, 38)',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-adlam">
+
+
+    <header class="header__section h-[80px] bg-living-primary-bg flex">
+        <div class="navbar">
+            <div class="navbar-start mr-7">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 md:hidden"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7" />
+                  </svg>
+                 <div class="hidden md:flex md:items-center gap-3 mx-7"> 
+                    <img class="ml-16 w-7" src="images/logo-header.png" alt="a palm of a dog">
+                    <p>Browse<span class="text-yellow-400 font-normal">4</span>Pets</p></div>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center hidden md:block lg:flex">
+              <a class="btn btn-ghost">Find a pet</a>
+              <a class="btn btn-ghost">Breads</a>
+              <a class="btn btn-ghost">Contact us</a>
+            </div>
+            <div class="navbar-end gap-2 mr-7 hidden md:flex">
+                <i class="fa-regular fa-bell text-xl pr-1"></i>
+                <i class="fa-solid fa-magnifying-glass text-xl pr-1"></i>
+              <button class="border border-living-secondary-bg bg-white px-5 py-1 rounded">
+                Login
+              </button>
+              <button class="bg-yellow-400 px-5 py-1 rounded border border-yellow">
+                Register
+              </button>
+            </div>
+            <div class="navbar-end gap-2 mr-7 flex md:hidden lg:hidden">
+                <div class="flex md:flex md:items-center gap-3 mx-7"> 
+                    <img class="ml-16 w-7" src="images/logo-header.png" alt="a palm of a dog">
+                    <p>Browse<span class="text-yellow-400 font-normal">4</span>Pets</p></div>
+                </div>
+            </div>
+          </div>
+    </header>
+    
+    
+      
+</body>
+</html>
