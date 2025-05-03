@@ -13,19 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- ADlAM Display font END -->
 
+    <!-- Sora font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Sora font end -->
+
      <!-- DaisyUI tailwind -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
      <!-- DaisyUI tailwind -->
      <style>
-         .font-adlam {
-            font-family: 'ADLaM Display', sans-serif;
-         }
+         /* .font-adlam {
+            font-family: 'ADLaM Display';
+         } */
      </style>
      <script>
         tailwind.config = {
           theme: {
             extend: {
+                fontFamily: {
+                adlam: ['"ADLaM Display"', 'system-ui'],
+                roboto: ['"Roboto"', 'sans-serif'],
+                sora: ['"Sora"', 'sans-serif'],
+                },
               colors: {
                 clifford: '#da373d',
                 'bike-primary': '#E76F51',
@@ -37,12 +48,12 @@
         }
       </script>
 </head>
-<body class="font-adlam">
+<body class="">
 
 
     <header class="header__section h-[80px] bg-living-primary-bg flex">
         <div class="navbar">
-            <div class="navbar-start mr-7">
+            <div class="navbar-start ml-20">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                   <svg
@@ -70,12 +81,12 @@
                 </ul>
               </div>
             </div>
-            <div class="navbar-center hidden md:block lg:flex">
+            <div class="navbar-center hidden md:block lg:flex mr-14">
               <a class="btn btn-ghost">Find a pet</a>
               <a class="btn btn-ghost">Breads</a>
               <a class="btn btn-ghost">Contact us</a>
             </div>
-            <div class="navbar-end gap-2 mr-7 hidden md:flex">
+            <div class="navbar-end gap-2 hidden md:flex mr-20">
                 <i class="fa-regular fa-bell text-xl pr-1"></i>
                 <i class="fa-solid fa-magnifying-glass text-xl pr-1"></i>
               <button class="border border-living-secondary-bg bg-white px-5 py-1 rounded">
@@ -85,7 +96,7 @@
                 Register
               </button>
             </div>
-            <div class="navbar-end gap-2 mr-7 flex md:hidden lg:hidden">
+            <div class="navbar-end gap-2 flex md:hidden lg:hidden">
                 <div class="flex md:flex md:items-center gap-3 mx-7"> 
                     <img class="ml-16 w-7" src="images/logo-header.png" alt="a palm of a dog">
                     <p>Browse<span class="text-yellow-400 font-normal">4</span>Pets</p></div>
@@ -93,6 +104,18 @@
             </div>
           </div>
     </header>
+
+    <secton class="hero__section mx-20">
+        <div class="section__content">
+            <div class="hero__content">
+                <h1 class="text-4xl font-bold font-adlam leading-normal">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+                <p class="font-sora">Discover a world of treats, toys, and essentials handpicked for <br> your furry fiends. Shop now and make tails wag with joy!</p>
+                <button class="bg-yellow-400 px-5 py-1 rounded border border-yellow">Find a pet</button>
+            <img src="images/cat-big.png" alt="A big Cat">
+
+        </div>
+    </secton>
+      
     
     
       
