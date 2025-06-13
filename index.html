@@ -28,6 +28,9 @@
             font-family: 'ADLaM Display';
          } */
      </style>
+     <!-- Tailwind CSS CMD -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- Tailwind CSS CMD -->
      <script>
         tailwind.config = {
           theme: {
@@ -117,6 +120,29 @@
 
         </div>
     </secton>
+
+    <section class="@container section__category pt-16">
+
+      <h2 class="text-4xl font-bold font-adlam leading-normal md:pl-20 mb-11">Browse By Categories</h2>
+
+      <div class="category_cards @8xl:flex-row">
+        <div class="card bg-living-secondary-bg-2 w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="images/dog-cartoon.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     
     </main>
